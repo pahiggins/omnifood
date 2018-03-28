@@ -30,17 +30,74 @@ html {
   max-width: 1140px;
 }
 
+section {
+  padding: 80px 0px;
+}
+
+.box {
+  padding: 1%;
+}
+
 /* ---------- HEADINGS ---------- */
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
 
 h1 {
   color: white;
   font-size: 240%;
-  font-weight: 300;
   letter-spacing: 1px;
   margin-bottom: 20px;
   margin-top: 0;
-  text-transform: uppercase;
   word-spacing: 4px;
+}
+
+h2 {
+  font-size: 180%;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-align: center;
+  word-spacing: 2px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  background-color: #e67e22;
+  content: " ";
+  display: block;
+  height: 2px;
+  margin: 30 auto 0 auto;
+  width: 100px;
+}
+
+/* ---------- PARAGRAPHS ---------- */
+
+.long-copy {
+  line-height: 145%;
+  margin-left: 15%;
+  width: 70%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/* ---------- ICONS ---------- */
+
+.icon-big {
+  color: #e67e22;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 350%;
 }
 
 /* ---------- BUTTONS ---------- */
