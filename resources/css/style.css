@@ -189,3 +189,50 @@ header {
 .main-nav li a:active {
   border-bottom: 2px solid #cf6d17;
 }
+
+/* ---------------------------------------- */
+/* FEATURES */
+/* ---------------------------------------- */
+
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+/* ---------------------------------------- */
+/* MEALS */
+/* ---------------------------------------- */
+
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.meal-photo img {
+  height: auto;
+  opacity: 0.7;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+  width: 100%;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1);
+}
