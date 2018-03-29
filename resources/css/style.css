@@ -20,9 +20,10 @@ body {
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 300;
-  overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
+
+body { overflow-x: hidden; }
 
 .clearfix {zoom: 1}
 .clearfix:after {
@@ -251,7 +252,8 @@ header {
 
 .sticky {
   background-color: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 2px 2px #e8e8e8;
+  -webkit-box-shadow: 0 2px 2px #e8e8e8;
+          box-shadow: 0 2px 2px #e8e8e8;
   left: 0;
   position: fixed;
   top: 0;
@@ -269,6 +271,20 @@ header {
 .sticky .logo-black { display: block; }
 
 .sticky .main-nav { margin-top: 18px; }
+
+/* ---------- MOBILE NAV ---------- */
+
+.mobile-nav-icon {
+  cursor: pointer;
+  display: none;
+  float: right;
+  margin-top: 30px;
+}
+
+.mobile-nav-icon i {
+  color: white;
+  font-size: 200%;
+}
 
 /* ---------------------------------------- */
 /* FEATURES */
@@ -555,4 +571,27 @@ footer p {
   color: #888;
   margin-top: 20px;
   text-align: center;
+}
+
+/* ---------------------------------------- */
+/* ANIMATIONS */
+/* ---------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.js--wp-4 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1;
 }
