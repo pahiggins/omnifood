@@ -105,8 +105,37 @@ h2:after {
 .icon-big {
   color: #e67e22;
   display: block;
-  margin-bottom: 10px;
   font-size: 350%;
+  margin-bottom: 10px;
+}
+
+.icon-small {
+  color: #cf6d17;
+  display: inline-block;
+  font-size: 120%;
+  line-height: 120%;
+  margin-right: 10px;
+  margin-top: -5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 30px;
+}
+
+/* ---------- LINKS ---------- */
+
+a:link,
+a:visited {
+  border-bottom: 1px solid #e67e22;
+  color: #cf6d17;
+  padding-bottom: 1px;
+  text-decoration: none;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  border-bottom: 1px solid transparent;
+  color: #555;
 }
 
 /* ---------- BUTTONS ---------- */
@@ -151,6 +180,7 @@ h2:after {
 /* ---------------------------------------- */
 
 header {
+  background-attachment: fixed;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
   background-position: center;
   background-size: cover;
@@ -291,8 +321,68 @@ header {
   width: 55px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 50px;
   margin-right: 10px;
   width: auto;
+}
+
+/* ---------------------------------------- */
+/* CITIES */
+/* ---------------------------------------- */
+
+.box img {
+  height: auto;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.city-feature {
+  margin-bottom: 5px;
+}
+
+/* ---------------------------------------- */
+/* TESTIMONIALS */
+/* ---------------------------------------- */
+
+.section-testimonials {
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+  background-size: cover;
+  color: white;
+}
+
+blockquote {
+  font-style: italic;
+  line-height: 145%;
+  margin-top: 40px;
+  padding: 2%;
+  position: relative;
+}
+
+blockquote:before {
+  content: "\201C";
+  display: block;
+  font-size: 500%;
+  left: -5px;
+  position: absolute;
+  top: -5px;
+}
+
+cite {
+  display: block;
+  font-size: 90%;
+  margin-top: 25px;
+}
+
+cite img {
+  border-radius: 50%;
+  height: 45px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
